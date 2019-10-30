@@ -1,12 +1,8 @@
-body {
-    background-color: blue;
+.btn {
+	background-color: green;
+	color: white;
 }
-#yeah {
-    font-family: 'Franklin Gothic Medium';
-}
-#nop {
-    font-family: 'Times New Roman';
-}
-#images {
-    display: flex;
+
+.inText {
+	color: black;
 }
