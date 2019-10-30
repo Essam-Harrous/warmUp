@@ -1,0 +1,13 @@
+.right {
+	float: right;
+	margin: 50px;
+}
+.left {
+	float: left;
+	margin: 50px;
+}
+.create {
+	position: absolute;
+	bottom: 500px;
+	left: 500px;
+}
