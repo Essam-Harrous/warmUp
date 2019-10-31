@@ -22,3 +22,28 @@ Technical Details
     -The maximum size of a range will be 100 integers
     -The starting number of a range will be: 0 < n < 100
  */
+
+ function mysteryRange(inputString, range) {
+ 	var leftNum = inputString.length % range;
+ 	var correctNum = Math.floor(inputString.length / range);
+ 	var arrNum = [...inputString.split('')]
+ 	var arr = []
+ 	var i = 1;
+	var j = 1;
+ 	while(arrNum.length){
+ 		if(i <= leftNum){
+ 			if (leftNum % 2 === 0) {
+ 				arr.push(parseInt(arrNum.splice(0, 2).join('')))
+ 			} else {
+ 				arr.push(parseInt(arrNum.splice(0, 1)))
+ 			}
+ 			i++;
+ 		}else {
+			console.log('afdslf')
+			arr.push(parseInt(arrNum.splice(0, correctNum)))
+		}
+		console.log(j, arrNum.length)
+    }
+    //now i have an array of the range  I just need to order it but i don't have time
+    for()
+ } 
