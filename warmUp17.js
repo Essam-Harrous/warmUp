@@ -27,6 +27,13 @@
 
 // ​
 // ​
-// var calculateTime = function(keyboard, word) {
-    
-// };
+ var calculateTime = function(keyboard, word) {
+    var result = 0;
+    var chars = word.split('')
+    firstIndex = 0;
+    for (var i = 0; i < chars.length; i++) {
+    	result += Math.abs(keyboard.indexOf(chars[i]) - lastIndex);
+    	lastIndex = keyboard.indexOf(chars[i]);
+    }
+    return result
+ };
