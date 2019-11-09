@@ -10,3 +10,23 @@
 
 // input   =  "aaaaaaaaaaaa"
 // result  =  "123456789101112"
+function replaceString(str) {
+	var arr = str.split('');
+	var letters = [];
+	var result = [];
+	for (var i = 0; i < arr.length; i++) {
+		var count = 1;
+		console.log(letters.indexOf(arr[i]), arr[i], result , 'first')
+		if (letters.indexOf(arr[i]) != -1) {
+			console.log(count, 'second')
+		    for (var i = 0; i < letters.length; i++) {
+			   if (letters[i] === arr[i]) {
+				  count++
+			   }
+		    }			
+		}
+		letters.push(arr[i])
+		result.push(count)
+	}
+	return result
+}
